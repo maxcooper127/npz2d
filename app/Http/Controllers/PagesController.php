@@ -16,7 +16,10 @@ class PagesController extends Controller
     {
         $workers = Worker::latest()->get();
 
-        return view('index', compact('workers'));
+
+
+
+        return view('index', compact('workers', 'position'));
     }
 
 }

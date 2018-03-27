@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Stevebauman\Location\Facades\Location;
+
 
 class Worker extends Model
 {
@@ -14,6 +16,12 @@ class Worker extends Model
     protected $fillable = [
         'ip', 'name', 'email', 'country',
     ];
+
+
+   public function country()
+    {
+        return 1;
+    }
 
 
 

@@ -20,6 +20,24 @@ class LoginController extends Controller
 
     use AuthenticatesUsers;
 
+    //Recaptcha validation
+//$response = Zttp::asFormParams()->post('https://www.google.com/recaptcha/api/siteverify', [
+//'secret' => config('services.recaptcha.secret'),
+//'response' => $request->input('g-recaptcha-response'),
+//'remote_ip' => $_SERVER['REMOTE_ADDR'],
+//]);
+//
+//if ($response->json()['success'])
+//{
+//$this->validate($request, [
+//$this->username() => 'required|string',
+//'password' => 'required|string',
+//]);
+//}
+//
+//else {
+//    throw  new \Exception('Recaptcha failed');
+//}
     /**
      * Where to redirect users after login.
      *
